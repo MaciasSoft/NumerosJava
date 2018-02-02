@@ -11,21 +11,24 @@ public class Main {
 
 
         Scanner escan=new Scanner(System.in);
-        System.out.println("Introduce el numero a ser comparado:");
-        String valor=escan.nextLine();
 
-        int n=Integer.parseInt(valor);
+        int n = 0;
 
-        Numero resp=new Numero(n);
-        //System.out.println("El numero comparado es par..? \n"+resp.numeroPar());
-        if (resp.numeroPar())
-        {
-            System.out.println("el numero ingresado es par");
+        do {
+            System.out.println("Introduce un numero, introdusca:0 para terminar");
+
+
+            String valor = escan.nextLine();
+
+            Numero resp = new Numero(n);
+            //System.out.println("El numero comparado es par..? \n"+resp.numeroPar());
+            if (resp.numeroPar()) {
+                System.out.println("el numero ingresado es par");
+            } else {
+                System.out.println("es impar");
+            }
         }
-        else
-        {
-            System.out.println("es impar");
-        }
+        while (n!=0);
 
     }
 }

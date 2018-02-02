@@ -12,5 +12,12 @@ public class Numero {
     {
        return num%2==0;//evalua si el numero es par
     }
+   /* public int numeroPrimo()
+    {
+        if (num)
+        {
+
+        }
+    }*/
 }
 
